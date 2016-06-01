@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/elements.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>The Elements Project</h1>
+          <h2>a community of innovators</h2>
+        </section>
+        <section>
+          <section>
+            <h3 class="fragment" data-fragment-index="2">Bitcoin</h3>
+            <img src="img/bitcoin-icon.png" class="medium plain" data-fragment-index="1" />
+            <p class="fragment" data-fragment-index="3">the most well-tested, battle-hardened blockchain</p>
+          </section>
+          <section>
+            <h3>The Bitcoin network</h3>
+            <p>has been functional for</p>
+            <h1 data-bind="bitcoinDowntime"></h1>
+            <p>of the time since its inception</p>
+            <p><small>(since Jan 3 2009 02:54:25 GMT)</small></p>
+          </section>
+          <section>
+            <h3>Building a blockchain?</h3>
+            <h2 class="fragment">Use the Bitcoin codebase.</h2>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Elements</h3>
+            <p class="fragment">composable components<span class="fragment"> that<br />extend the Bitcoin codebase.</span></p>
+          </section>
+          <section>
+            <h3>Elements</h3>
+            <p class="fragment">transform Bitcoin's features<span class="fragment"><br />into <strong>domain-specific solutions</strong>.</span></p>
+            <img src="img/confidential-transactions.svg" class="small plain block fragment" />
+            <img src="img/time-lock.svg" class="small plain block fragment" />
+            <img src="img/deterministic-pegs.svg" class="small plain block fragment" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Sidechains</h3>
+            <p class="fragment">are bundles of Elements<span class="fragment"><br />deployed as a blockchain</span><span class="fragment"><br />on the Bitcoin network.</span></p>
+          </section>
+          <section>
+            <h3>The Idea</h3>
+            <div class="sidechains" style="position: relative;">
+              <div style="position: relative;" class="fragment">
+                <span style="position: absolute; top: 4.5em; left: 3.5em;">Bitcoin</span>
+                <img src="img/1.svg" class="medium plain spin" />
+              </div>
+              <div style="position: relative; margin-left: -3.1em;" class="fragment">
+                <span style="position: absolute; top: 4.5em; left: 3em;">Sidechain</span>
+                <img src="img/2.svg" class="medium plain backspin" />
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Implications</h3>
+            <p class="fragment">Sidechains on sidechains.<br /><span class="fragment">Sidechains all the way down.</span></p>
+          </section>
+        </section>
+        <section>
+          <h3>The Periodic Table of Elements</h3>
+          <table style="font-size: 0.75em;">
+            <tr>
+              <td>
+                <img src="img/confidential-transactions.svg" class="tiny plain" />
+                Confidential Transactions
+              </td>
+              <td>
+                <img src="img/segregated-witness.svg" class="tiny plain" />
+                Segregated Witness
+              </td>
+              <td>
+                <img src="img/time-lock.svg" class="tiny plain" />
+                Relative Lock Time
+              </td>
+              <td>
+                <img src="img/schnorr-signatures.svg" class="tiny plain" />
+                Schnorr Signatures
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="img/new-opcodes.svg" class="tiny plain" />
+                New Opcodes
+              </td>
+              <td>
+                <img src="img/signature-covers-value.svg" class="tiny plain" />
+                Signature Covers Value
+              </td>
+              <td>
+                <img src="img/deterministic-pegs.svg" class="tiny plain" />
+                Deterministic Pegs
+              </td>
+              <td>
+                <img src="img/signed-blocks.svg" class="tiny plain" />
+                Signed Blocks
+              </td>
+            </tr>
+            <tr>
+              <td style="border: 0;"></td>
+              <td style="border: 0;"></td>
+              <td>
+                <img src="img/asset-issuance.svg" class="tiny plain" />
+                Asset Issuance
+              </td>
+              <td>
+                <img src="img/bitmask-sighash-modes.svg" class="tiny plain" />
+                Bitmask Sighash Modes
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h3>The Future</h3>
+        </section>
+        <section>
+          <h3>Bitcoin</h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+
+      function update() {
+        var timenow = new Date().getTime() / 1000;
+        //current time in seconds from the unix epoch start
+
+        var downtime= (6*60*60+20*60);
+        //6:20 of downtime on 3/12/2013
+        //converted to seconds
+        //source: http://vincesamios.com/bitcoins/accidental-hardfork-the-resilience-of-a-fledgling-bitcoin
+
+        var totaltime = timenow - 1230951265;
+        //where 1230951265 is the number of seconds since the unix epoch start at the time of the first block on Jan 3 2009 02:54:25 GMT
+
+        var uptime = 100*(totaltime-downtime)/totaltime;
+        var printme = uptime.toFixed(11).toString().concat(" %");
+
+        document.querySelector('*[data-bind="bitcoinDowntime"]').innerHTML = printme;
+      }
+
+      update();
+
+      setInterval(update, 200);
+    </script>
+  </body>
+</html>
