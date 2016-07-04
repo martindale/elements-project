@@ -230,6 +230,10 @@ body {
   border: 0;
   box-shadow: none; }
 
+.reveal section img.rounded {
+  border: 0.2em solid;
+  border-radius: 50% }
+
 .reveal a img {
   -webkit-transition: all .15s linear;
   -moz-transition: all .15s linear;
