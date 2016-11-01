@@ -25,11 +25,53 @@
     <div class="reveal">
       <div class="slides">
         <section>
+          
+          <img class="medium plain" src="img/bitcoin-icon-wreath.png" />
+
           <h1 style="font-size: 2em;">The Elements Project</h1>
           <h2>a community of innovators</h2>
 
-          <h3 style="margin-top: 5em;"><small>Eric Martindale &bull; La Maison du Bitcoin &bull; July 7th, 2016</small></h3>
+          <h3 style="margin-top: 2.5em;"><small>Eric Martindale &bull; Triangle Bitcoin Meetup &bull; November 1st, 2016</small></h3>
         </section>
+        
+        <section>
+          <section>
+            <img src="img/martindale.jpg" class="rounded small inline" />
+            <h3>Eric Martindale</h3>
+            <h4>eric@blockstream.com &bull; <a href="https://twitter.com/martindale" rel="me">@martindale</a></h4>
+            <h5 style="text-transform: lowercase;">Presentation &amp; Source Code Available</h5>
+            <h6 style="text-transform: lowercase; font-size: 0.7em;"><a href="https://martindale.github.io/scaling-bitcoin"><code>martindale.github.io/scaling-bitcoin</code></a></h6>
+          </section>
+          
+          <section>
+            <img src="img/blockstream-logo.png" class="large plain" />
+          </section>
+          
+          <section>
+            <h3>Some Things I've Worked On</h3>
+            <ul>
+              <li class="fragment">decentralized education <!-- <span class="fragment">(Coursefork, now Trinket)</span> --></li>
+              <li class="fragment">collaborative writing platforms <!-- <span class="fragment">(Quill)</span> --></li>
+              <li class="fragment">augmented reality <!-- <span class="fragment">(Mirascape)</span> --></li>
+              <li class="fragment">computer vision <!-- <span class="fragment">(Neogence)</span> --></li>
+              <li class="fragment">machine learning <!-- <span class="fragment">(LocalSense)</span> --></li>
+              <li class="fragment">predictive intelligence <!-- <span class="fragment">(LocalSense)</span> --></li>
+            </ul>
+          </section>
+          
+          <section>
+            <h3>Names of the Projects</h3>
+            <ul>
+              <li class="fragment">Trinket (formerly Coursefork)</li>
+              <li class="fragment">Quill (formerly RolePlayGateway)</li>
+              <li class="fragment">Neogence</li>
+              <li class="fragment">Mirascape</li>
+              <li class="fragment">LocalSense</li>
+              <li class="fragment">SenseMaker</li>
+            </ul>
+          </section>
+        </section>
+
         <section>
           <section>
             <h3 class="fragment" data-fragment-index="2">Bitcoin</h3>
@@ -185,7 +227,7 @@
             </table>
           </section>
           <section>
-            <img src="/img/rootstock-white.webp" class="tiny plain" />
+            <img src="img/rootstock-white.webp" class="tiny plain" />
             <h3>Rootstock</h3>
           </section>
         </section>
@@ -197,21 +239,21 @@
             <h3>Public Sidechain</h3>
             <h4 class="fragment">pegged to Bitcoin's <code>testnet</code> blockchain</h4>
             <h4 class="fragment">Launched on June 1st, 2015</h4>
-            <h2 class="fragment" style="font-size: 3em; margin-top: 1em;">🎆🎂🎆</h2>
           </section>
           <section>
             <h3 style="margin-top: 1em;">Segregated Witness</h3>
-            <img src="/img/segregated-witness.svg" class="small plain fragment" />
+            <img src="img/segregated-witness.svg" class="small plain fragment" />
             <ul class="fragment">
               <li>2015, Q2: first prototype built in Elements</li>
               <li>2015, June: deployed to the Alpha sidechain</li>
               <li>2015, December: proposed to the Bitcoin community at the Scaling Bitcoin conference in Hong Kong (BIP 141)</li>
               <li>2016, June 6th: accepted into Bitcoin Core (PR #8149)</li>
+              <li>2016, October 27th: Bitcoin 0.13.1 released!</li>
             </ul>
           </section>
           <section>
               <h3 style="margin-top: 1em;"><code>OP_CHECKSEQUENCEVERIFY</code></h3>
-              <img src="/img/time-lock.svg" class="small plain fragment" />
+              <img src="img/time-lock.svg" class="small plain fragment" />
               <ul class="fragment">
                 <li>2015, Q2: first prototype built in Elements</li>
                 <li>2015, June: deployed to the Alpha sidechain</li>
@@ -226,7 +268,7 @@
           <section></section>
           <section>
             <h3 style="margin-top: 1em;">Confidential Transactions</h3>
-            <img src="/img/confidential-transactions.svg" class="small plain fragment" />
+            <img src="img/confidential-transactions.svg" class="small plain fragment" />
             <ul>
               <li class="fragment">Conceals transaction amounts, but <strong>not sender or receiver</strong></li>
               <li class="fragment">Can be combined with other Elements for better privacy (CoinJoin-like.)</li>
@@ -235,18 +277,12 @@
           </section>
         </section>
         <section>
-          <h2>Contributing</h2>
-          <h3>to the Elements Project</h3>
+          <h2>Getting Started</h2>
+          <h3>with the Elements Project</h3>
           <section></section>
           <section>
             <div class="fragment">
-              <script async defer src="https://chat.elementsproject.org/slackin.js?large"></script>
-            </div>
-            <div class="fragment">
               <h4><a href="https://chat.elementsproject.org/"><code>chat.elementsproject.org</code></a></h4>
-            </div>
-            <div class="fragment">
-              <h4><a href="https://www.elementsproject.org/contributing"><code>elementsproject.org/contributing</code></a></h4>
             </div>
             <div class="fragment">
               <h4><a href="https://github.com/ElementsProject/elements"><code>github.com/ElementsProject/elements</code></a></h4>
@@ -272,7 +308,6 @@
       // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
         history: true,
-
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
           { src: 'plugin/markdown/marked.js' },
